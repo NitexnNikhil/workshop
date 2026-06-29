@@ -114,10 +114,16 @@ rag/
 1. Install `uv`:
 
 ```bash
-pip install uv
+python -m pip install uv
 ```
 
 2. Create `.env`:
+
+### To Create the `.env` file follow this command:
+```bash
+touch .env
+
+```
 
 ```env
 OPENROUTER_API_KEY=your_api_key_here
@@ -145,7 +151,7 @@ WORKSHOP_NO_EFFECT=0
 4. Install dependencies:
 
 ```bash
-uv sync
+python -m uv sync
 ```
 
 ## RAG Data Notes
@@ -157,7 +163,7 @@ uv sync
 ## Run Terminal UI
 
 ```bash
-uv run agentic-chat --terminal
+python -m uv run agentic-chat --terminal
 ```
 
 Terminal RAG commands:
@@ -169,7 +175,7 @@ Terminal RAG commands:
 ## Run Browser UI
 
 ```bash
-uv run agentic-chat --web
+python -m uv run agentic-chat --web
 ```
 
 Web sidebar controls:
